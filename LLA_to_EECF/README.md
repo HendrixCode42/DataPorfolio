@@ -8,8 +8,11 @@ coordinates (LLA: latitude (in degrees), longitude (in degrees), altitude (in ki
 to Earth-Centered, Earth-Fixed coordinates (ECEF: X,Y,Z in meters), estimating ECEF velocity, 
 and verifying results end-to-end.
 
-Core files:
-A. lla_to_ecef.py: 
+## Core files:
+
+A. lla_to_ecef.py
+
+
     1. Reads a CSV file containing unnamed columns in this order:
         - Time since the Unix epoch (seconds)
         - Latitude (degrees, WGS-84)
@@ -52,11 +55,14 @@ A. lla_to_ecef.py:
                        representing how quickly the object’s Z-coordinate is changing with time.
 
 B. verify_ecef.py
+
     This script independently verifies that the ECEF coordinates produced by
     lla_to_ecef.py are mathematically correct, physically reasonable,
     and internally consistent. It performs a sequence of automated checks and
     stops immediately (fail-fast) if any check fails. If all checks pass, the script 
     prints a clear confirmation in the terminal. The script does this with the following:
+
+    
         1. Loads the two required input files into pandas DataFrames
             - An original LLA CSV file containing latitude (in degrees), longitude (in degrees), 
               and altitude (in kilometers).
@@ -111,6 +117,7 @@ B. verify_ecef.py
 
 
 C. LLA_to_ECEF_SG_test.ipynb
+
     This Jupyter Notebook is an exploratory test designed to find out whether applying a 
     light Savitzky–Golay (SG) smoothing filter to the original LLA time-series data 
     improves the numerical accuracy of the LLA to ECEF conversion. It helps determine if 
@@ -127,11 +134,10 @@ C. LLA_to_ECEF_SG_test.ipynb
     unwanted bias.
 
 References: 
-1. LLAtoECEF.pdf :
-  - The lla_to_ecef.py script directly implements the equations and constants 
-    described in LLAtoECEF.pdf for converting geodetic coordinates into ECEF Cartesian 
+1. LLAtoECEF.pdf:
+    - The lla_to_ecef.py script directly implements the equations and constants described in LLAtoECEF.pdf for                converting geodetic coordinates into ECEF Cartesian 
 
-2. PROJ Project (2025). Geodetic Transformation — PROJ Documentation.
+3. PROJ Project (2025). Geodetic Transformation — PROJ Documentation.
     - Informed the design of the inverse conversion step in verify_ecef.py by demonstrating 
     how ECEF (EPSG:4978) and geodetic (EPSG:4979) coordinate reference systems are transformed 
     using pyproj. https://proj.org/en/stable/usage/transformation.html
@@ -141,17 +147,17 @@ References:
     - Provided the exact usage pattern (Transformer.from_crs(..., always_xy=True)) that 
     the inverse check in verify_ecef.py follows to ensure correct axis ordering and 
     reproducible results.
-3. NumPy Documentation
+4. NumPy Documentation
     - Guided the efficient array-based implementation of LLA to ECEF transformations 
     rather than per-row loops, improving runtime for satellite trajectory datasets.
     https://numpy.org/doc/stable/reference/generated/numpy.vectorize.html
-4. SciPy Signal Processing (Savitzky-Golay filter)
+5. SciPy Signal Processing (Savitzky-Golay filter)
    - Informed the preprocessing step used in the accompanying test notebook to smooth 
    LLA inputs before finite-difference velocity estimation, as described in the 
    “LLA_to_ECEF_SG_test.ipynb” workflow.
    https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.savgol_filter.html
    https://scipy-cookbook.readthedocs.io/items/SavitzkyGolay.html
-5. GNSS Data Preprocessing with Savitzky–Golay (Georust project)
+6. GNSS Data Preprocessing with Savitzky–Golay (Georust project)
    - Illustrated real-world GNSS preprocessing pipeline using SG smoothing before 
    coordinate transformation.
    https://github.com/gnss-sdr/gnss-sdr
