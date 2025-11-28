@@ -68,7 +68,7 @@ Across these projects, you will see recurring strengths:
 
 # Author
 
-**Layla Quinones**  
+**Layla Hendrix**  
 Data Scientist and Educator  
 Denver, Colorado  
 
