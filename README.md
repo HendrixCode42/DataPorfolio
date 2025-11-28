@@ -1,6 +1,6 @@
 # Layla Hendrix — Data Portfolio
 
-Welcome to my Data Portfolio. This repository highlights a collection of end-to-end data, analytics, modeling, and engineering projects that demonstrate my technical depth, real-world problem solving, and commitment to building high-quality, reproducible data products. The projects span Python, R, machine learning, geospatial analytics, Dash app development, and large-scale time series forecasting.
+Welcome to my Data Portfolio. This repository highlights a collection of end-to-end data, analytics, modeling, and engineering projects that demonstrate technical depth, real-world problem solving, and a commitment to building high-quality, reproducible data products. These projects span Python, R, machine learning, geospatial analytics, interactive dashboards, financial network analysis, and large-scale time series forecasting.
 
 Each project contains its own README with detailed methods, skills, and outcomes. Below is a consolidated overview of the portfolio.
 
@@ -22,7 +22,11 @@ Engineering-heavy coding challenge implementing precise geodetic coordinate tran
 
 ## 4. Digital Platform Engagement Time Series Forecasting  
 Multi-year forecasting project analyzing student and teacher digital engagement patterns across NYC schools using PySpark and SARIMAX.  
-**Key Skills:** PySpark, time series modeling, anomaly detection, Tableau/Power BI reporting  
+**Key Skills:** PySpark, time series modeling, anomaly detection, Tableau/Power BI reporting
+
+## 5. S&P 500 Network Analysis  
+Analysis of structural relationships within the S&P 500 using advanced network algorithms. Built multi-layer networks based on stock correlations, sector/industry metadata, and company attributes to uncover centrality patterns and hidden market structure.  
+**Key Skills:** NetworkX, financial data analysis, yfinance, correlation graph construction, centrality metrics, graph visualization 
 
 ---
 
@@ -34,35 +38,41 @@ Multi-year forecasting project analyzing student and teacher digital engagement 
 - Geospatial analysis and coordinate transformations
 - Data cleaning, pipeline development, ETL workflows
 - API consumption and JSON processing
+- Financial data processing (yfinance, correlation matrices)
 
 ### **Machine Learning & Analytics**
-- Classification and forecasting models  
+- Classification and regression models  
 - GLMs, Poisson regression, decision trees  
 - SARIMAX time series forecasting  
-- Feature engineering and model selection  
-- Statistical diagnostics and model explainability  
+- Network analytics: centrality, clustering, bipartite graphs, correlation networks  
+- Feature engineering, model selection, and diagnostics  
+- Statistical explainability and hypothesis-driven analysis  
 
 ### **Visualization & Dashboards**
-- Dash & Plotly interactive applications  
-- Tableau & Power BI dashboards  
-- Custom visuals for real-time and historical trends  
+- Interactive Dash applications  
+- Graph visualizations using NetworkX and Matplotlib  
+- Tableau & Power BI reporting dashboards  
+- Time series trend visuals, heatmaps, and correlation diagrams  
+- Visual storytelling for both technical and non-technical audiences  
 
 ### **Data Storytelling & Reporting**
-- R Markdown analytics reports  
+- R Markdown reproducible reports  
 - Executive-ready insights and summaries  
-- Clear communication of complex technical findings  
+- Interpretation of complex networks, geospatial systems, and ML outputs  
+- Clear communication of analytical reasoning and findings  
 
 ---
 
 # Portfolio Themes
 
-Across these projects, you will see recurring strengths:
+Across these projects, recurring strengths include:
 
-- **End-to-end ownership** from raw data ingestion to final insights  
-- **Analytical rigor** using statistical and scientific reasoning  
-- **Focus on usability** through dashboards, visuals, and clear explanations  
-- **Real-world problem solving** across education, geospatial, and forecasting domains  
-- **Commitment to reproducibility** through clean, documented code  
+- **End-to-end ownership** of full data workflows  
+- **Analytical rigor** grounded in statistical, computational, and network-based reasoning  
+- **Cross-domain versatility** across education, finance, geospatial analytics, and platform usage modeling  
+- **Usability and clarity** through dashboards, intuitive visuals, and structured presentations  
+- **Reproducibility and precision** through clean, well-documented, scientifically-rooted code  
+- **Pattern discovery** across high-dimensional datasets, correlation networks, and temporal systems  
 
 ---
 
