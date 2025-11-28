@@ -54,6 +54,6 @@ install.packages(c("tidyverse", "ggplot2", "rpart", "rpart.plot"))
 3. Knit the document to generate the final HTML or PDF report.
 
 ## Author
-**Layla Quinones**  
+**Layla Hendrix**  
 Data Scientist and Educator  
 Denver, CO
