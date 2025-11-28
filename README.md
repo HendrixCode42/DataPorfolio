@@ -1,4 +1,4 @@
-# Layla Quinones — Data Portfolio
+# Layla Hendrix — Data Portfolio
 
 Welcome to my Data Portfolio. This repository highlights a collection of end-to-end data, analytics, modeling, and engineering projects that demonstrate my technical depth, real-world problem solving, and commitment to building high-quality, reproducible data products. The projects span Python, R, machine learning, geospatial analytics, Dash app development, and large-scale time series forecasting.
 
