@@ -63,6 +63,6 @@ This README accompanies the project code:
 `Public_Schools_Dashboard.py`
 
 ## Author
-**Layla Quinones**  
+**Layla Hendrix**  
 Data Scientist 
 Denver, CO  
